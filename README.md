@@ -1,30 +1,43 @@
 # 📊 Power BI Portfolio
 
-Bem-vindo(a) ao meu portfólio de **Análise de Dados utilizando Power BI e SQL Server**!  
-Este repositório faz parte do meu plano de estudos para transição de carreira, reunindo atividades práticas que envolvem desde a preparação dos dados até a criação de dashboards completos e funcionais.  
-O objetivo é demonstrar domínio dos fundamentos de análise, modelagem e visualização de dados.
+Bem-vindo(a) ao meu portfólio de **Análise de Dados com Power BI e SQL Server**!  
+Este repositório reúne meus projetos práticos de estudo e evolução na área de **Análise de Dados**, aplicando conceitos de **SQL**, **modelagem**, **DAX** e **visualização de dados** para criar dashboards profissionais e interativos.
 
+---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Objetivo do Repositório
 
-Apresentar, na prática, competências essenciais para atuar como **Analista de Dados**, incluindo:
+Demonstrar, na prática, habilidades essenciais para atuação como **Analista de Dados**, incluindo:
 
-- Desenvolvimento de Dashboards no **Power BI**
-- Modelagem relacional (Tabelas Fato e Dimensão)
-- Coleta, limpeza e transformação de dados com **SQL Server**
-- Criação de medidas, KPIs e cálculos utilizando **DAX**
-- Aplicação de boas práticas de design, UX e storytelling com dados
-- Publicação e documentação técnica no **GitHub**
+- Desenvolvimento de dashboards no **Power BI**
+- Modelagem relacional (tabelas Fato e Dimensão)
+- Coleta, limpeza e tratamento de dados com **SQL Server**
+- Criação de **KPIs, medidas e indicadores** com DAX
+- Aplicação de boas práticas de design e storytelling com dados
+- Publicação, versionamento e documentação no **GitHub**
 
+---
 
-
-## 📆 Estrutura das Fases do Projeto
+## 📆 Estrutura das Fases do Portfólio
 
 | Fase | Tema Principal | Entregáveis |
-|------|----------------|-------------|
-| 🧱 **Fase I** | Fundamentos do Power BI | Dashboards iniciais usando CSV/Excel |
-| 💾 **Fase II** | SQL Server + Power BI | Criação do banco `VendasDB` e conexão com Power BI |
-| 📈 **Fase III** | DAX + Modelagem + Design | Dashboard com KPIs, relacionamentos e medidas avançadas |
-| 🚀 **Fase IV** | Projeto Final | Dashboard completo + README detalhado + vídeo/demo |
+|:--|:--|:--|
+| 🧱 **Fase I — Fundamentos Power BI** | Introdução à modelagem, filtros e gráficos básicos com dados Excel/CSV. | Dashboards: RH, Clientes e Locadora |
+| 💾 **Fase II — SQL Server + Power BI** | Integração de dados relacionais via SQL Server, criação de views e medidas. | Projeto: [Havaianas (SQL + Power BI)](./Havaianas%20(SQL%20+%20Power%20BI)/README.md) |
+| 📈 **Fase III — DAX + Modelagem Avançada** | Criação de modelos relacionais, medidas calculadas e KPIs estratégicos. | Dashboard analítico com indicadores e segmentações |
+| 🚀 **Fase IV — Projeto Final** | Construção de dashboard completo, com storytelling, DAX e documentação. | Entrega final + vídeo/apresentação |
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- **Power BI Desktop**
+- **SQL Server (SQL Express)**
+- **Microsoft Excel**
+- **Git e GitHub**
+- **DAX / T-SQL**
+
+---
+
 
 
