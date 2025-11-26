@@ -1,0 +1,108 @@
+CREATE DATABASE EVENTO
+USE EVENTO
+
+SELECT *
+FROM TB_EVENTOS
+--- tipo_eventos
+SELECT DISTINCT(tipo_eventos)
+FROM TB_EVENTOS
+
+SELECT DISTINCT(tipo_eventos)
+INTO DIM_TIPO_EVENTOS
+FROM TB_EVENTOS
+
+SELECT *
+FROM DIM_TIPO_EVENTOS
+
+--- COBERTURA
+SELECT DISTINCT(COBERTURA)
+FROM TB_EVENTOS
+
+SELECT DISTINCT(COBERTURA)
+INTO DIM_COBERTURA
+FROM TB_EVENTOS
+
+SELECT *
+FROM DIM_COBERTURA
+
+
+--- Coordenador_Resp
+SELECT DISTINCT(Coordenador_Resp)
+FROM TB_EVENTOS
+
+SELECT DISTINCT(Coordenador_Resp)
+INTO DIM_COORDENADOR_RESP
+FROM TB_EVENTOS
+
+SELECT *
+FROM DIM_COORDENADOR_RESP
+
+--- Contratante
+SELECT DISTINCT(Contratante)
+FROM TB_EVENTOS
+
+SELECT DISTINCT(Contratante)
+INTO DIM_CONTRATANTE
+FROM TB_EVENTOS
+
+SELECT *
+FROM DIM_CONTRATANTE
+
+SELECT *
+FROM TB_EVENTOS
+
+/* 1 - Total de Eventos */
+
+SELECT COUNT(data_evnt) as 'Total de eventos'
+FROM TB_EVENTOS
+
+/* 2 - Tipo de evento mais recorrente */ 
+CREATE VIEW VW_EVENTOS_RECORRENTES AS
+SELECT 
+    tipo_eventos,
+    COUNT(tipo_eventos) AS Quantidade_Eventos
+FROM TB_EVENTOS
+GROUP BY tipo_eventos;
+
+SELECT * 
+FROM VW_EVENTOS_RECORRENTES
+
+/* 3 - Comparativo de Pagamentos */ -- GROUP BY
+CREATE VIEW VW_Comparativo_Pagamentos AS
+SELECT PGTO, COUNT(PGTO) AS Quantidade_de_Pagementos
+FROM TB_EVENTOS
+GROUP BY PGTO
+
+SELECT * 
+FROM VW_Comparativo_Pagamentos
+
+/* 4 - Participantes por Evento */
+CREATE VIEW VW_PARTICIPANTES_EVENTOS AS
+SELECT tipo_eventos, COUNT(TOTAL_DE_PART_EVENTO) AS Quantidade_de_Participantes
+FROM TB_EVENTOS
+GROUP BY tipo_eventos
+
+SELECT *
+FROM VW_PARTICIPANTES_EVENTOS
+
+
+/* 5 - Evento que mais faturou */ 
+CREATE VIEW VW_TOP5_EVENTO_FATURAMENTO AS
+SELECT TOP 5 tipo_eventos, valor_faturado_do_dia
+FROM TB_EVENTOS
+ORDER BY tipo_eventos desc
+
+SELECT *
+FROM VW_TOP5_EVENTO_FATURAMENTO
+
+
+/* 6 - Contratantes TOP 5 */
+CREATE VIEW VW_TOP_5_CONTRATANTE AS
+select TOP 5  Contratante, COUNT(Contratante) as Quantidade
+from TB_EVENTOS
+group by Contratante
+order by Quantidade desc
+
+SELECT * 
+FROM VW_TOP_5_CONTRATANTE
+
