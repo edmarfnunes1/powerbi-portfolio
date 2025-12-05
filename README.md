@@ -1,82 +1,116 @@
 📊 Power BI Portfolio
 
-Bem-vindo(a) ao meu portfólio de Análise de Dados com Power BI e SQL Server!
-Este repositório reúne meus projetos práticos de estudo e evolução na área de Data Analytics, aplicando conceitos de SQL, modelagem de dados, DAX e visualização para criar dashboards profissionais e funcionais.
+Bem vindo ao meu portfólio de Análise de Dados com Power BI e SQL Server.
+Aqui eu reúno meus projetos práticos de estudo e desenvolvimento contínuo na área de Data Analytics, aplicando SQL, modelagem dimensional, DAX e visualização de dados para criar dashboards profissionais e de fácil interpretação.
 
-🎯 Objetivo do Repositório
+🎯 Objetivo do Portfólio
 
-Demonstrar, na prática, habilidades essenciais para atuação como Analista de Dados, incluindo:
+Este repositório apresenta, de forma prática, minhas habilidades como Analista de Dados:
 
-Desenvolvimento de dashboards no Power BI
+Construção de dashboards no Power BI
 
-Modelagem relacional (tabelas Fato e Dimensão)
+Modelagem de dados com tabelas Fato e Dimensão
 
-Coleta, limpeza e tratamento de dados com SQL Server
+Uso de SQL Server para coleta, limpeza e transformação de dados
 
-Criação de KPIs, métricas e indicadores utilizando DAX
+Criação de KPIs, métricas e indicadores com DAX
 
-Aplicação de boas práticas de UX/DataViz e storytelling com dados
+Aplicação de boas práticas de UX e DataViz
 
-Publicação, versionamento e documentação no GitHub
+Documentação dos projetos e versionamento com GitHub
 
-📁 Estrutura do Portfólio
+📁 Estrutura do Repositório
 
-Este repositório está dividido em fases de aprendizado, com projetos completos em cada etapa:
+O portfólio está organizado por módulos de aprendizado, cada um contendo projetos completos e documentados.
 
-🧱 Fase I — Fundamentos Power BI
+🧱 Fundamentos (Power BI)
 
-Introdução ao ambiente Power BI, gráficos básicos, filtros e criação de dashboards simples utilizando dados em Excel/CSV.
+Primeiro módulo, focado em aprender a utilizar o Power BI, entendendo gráficos, filtros e construção de dashboards simples usando dados em Excel.
 
-📌 Projetos desta fase:
+Projetos desta fase:
 
-📄 Dashboard RH
+Dashboard RH
 
-📄 Dashboard Clientes
+Dashboard Clientes
 
-📄 Dashboard Locadora
+Dashboard Locadora
 
 📁 Caminho: Fundamentos/
 
-💾 Fase II — SQL Server + Power BI
+💾 Havaianas (SQL + Power BI)
 
-Integração de dados relacionais utilizando SQL Server, criação de views, limpeza de dados e carregamento no Power BI.
-
-📌 Projeto desta fase:
-➡️ Havaianas (SQL + Power BI)
-
-📁 Caminho: Havaianas (SQL + Power BI)/
-
-📈 Fase III — SQL + DAX + Modelagem
-
-Construção de modelos relacionais, medidas DAX, KPIs estratégicos e criação de dashboards analíticos mais completos.
-
-📌 Projeto desta fase:
-➡️ Eventos (SQL + Power BI)
+Projeto integrando SQL Server ao Power BI para tratar dados reais de vendas.
 
 Inclui:
 
-Importação do CSV
+Banco SQL com tabelas e views
 
-Criação de Views no SQL
+Tratamento e padronização dos dados
 
-Limpeza e padronização dos dados
+Métricas principais de vendas
 
-Construção de indicadores
+Dashboard final com insights comerciais
 
-Dashboard profissional com insights
+📁 Caminho: Havaianas (SQL + Power BI)/
+
+📈 Projeto Eventos (SQL + Power BI)
+
+Projeto completo construído a partir de um dataset CSV. Participam SQL Server, DAX e modelagem dimensional.
+
+Inclui:
+
+Carga e validação do CSV
+
+Criação de views no SQL
+
+Transformações e normalizações
+
+Separação Fato e Dimensões
+
+Indicadores e métricas com DAX
+
+Dashboard final
 
 📁 Caminho: Projeto Eventos (SQL + Power BI)/
+
+🐞 QA Analytics Dashboard (Power BI)
+
+Dashboard analítico criado para monitoramento de qualidade em projetos de software.
+
+Inclui:
+
+Visão de bugs por severidade e origem
+
+Visão geral de execução de cenários
+
+Cálculo de tempo de resolução
+
+Arquivo PBIX e imagens de visualização
+
+📁 Caminho: qa-analytics-dashboard-powerbi/
+
+🎓 Universidade (Power BI)
+
+Projeto baseado em um dataset de ambiente universitário, contendo visão de alunos, cursos e análises gerais.
+
+Inclui:
+
+Dataset em Excel
+
+Dashboard Power BI com KPIs educacionais
+
+📁 Caminho: Universidade/
 
 🧠 Tecnologias Utilizadas
 
 Power BI Desktop
 
-SQL Server (Express)
+SQL Server
 
-DAX (Data Analysis Expressions)
+DAX
 
 T-SQL
 
-Excel / CSV
+Excel e CSV
 
 Git e GitHub
